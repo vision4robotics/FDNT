@@ -48,5 +48,7 @@ If you have any questions, please contact me.
 Haobo Zuo
 
 Email: <1951684@tongji.edu.cn>
+## Demo Video
+[![Watch the video](https://i.ytimg.com/vi/_FtC6ZmSo3s/maxresdefault.jpg)](https://youtu.be/_FtC6ZmSo3s)
 ## Acknowledgement
 The code is implemented based on [pysot](https://github.com/STVIR/pysot.git). We would like to express our sincere thanks to the contributors.
