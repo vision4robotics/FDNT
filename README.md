@@ -1,5 +1,11 @@
 # ResamplingNet: End-to-End Adaptive Feature Resampling Network for Real-Time Aerial Tracking
 ### Haobo Zuo, Changhong Fu, Sihang Li, Junjie Ye, and Guangze Zheng
+## Abstract
+Object feature pollution is one of
+the burning issues in UAV tracking, which is commonly caused by occlusion, fast motion, and illumination variation. Due to the contaminated information in the polluted object features, most trackers fail to precisely estimate the location and scale of the object. To address the feature pollution issue, this work proposes an efficient and effective adaptive feature resampling tracker, \textit{i.e.}, AFRT. AFRT mainly includes two stages: an adaptive downsampling network which can reduce the interference information of the feature pollution and a super-resolution upsampling network, applying Transformer to restore the object scale information. Specifically, the adaptive downsampling network strengthens the expression of the object location information, with a feature enhancement downsampling (FED) module. In order to achieve better training effect, a novel pooling distance loss function is designed to help FED module focus on the critical regions with the object information. Thereby, the features downsampled can be validly exploited to determine the location of the object. Subsequently, the super-resolution upsampling network raises the scale information in the features with a low-to-high (LTH) Transformer encoder. Exhaustive experiments on three well-known benchmarks validate the effectiveness of AFRT, especially on the sequences with feature pollution. In addition, real-world tests show the efficiency of AFRT with 31.4 frames per second. 
+The code and demo videos are available at: \url{https://github.com/vision4robotics/AFRT}. 
+
+![Workflow of our tracker](https://github.com/vision4robotics/ResamplingNet/blob/main/images/workflow.jpg)
 ## About Code
 ### 1. Environment setup
 This code has been tested on Ubuntu 18.04, Python 3.8.3, Pytorch 0.7.0/1.6.0, CUDA 10.2. Please install related libraries before running this code:
